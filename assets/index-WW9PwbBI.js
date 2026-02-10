@@ -25,7 +25,7 @@
                 <!-- Center Image -->
                 <div class="hero-col-center animate-on-scroll">
                     <div class="hero-img-card">
-                        <img src="/profile.jpg" alt="Keerthi Medha">
+                        <img src="profile.jpg" alt="Keerthi Medha">
                     </div>
                 </div>
 
