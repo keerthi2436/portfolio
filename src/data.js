@@ -8,7 +8,7 @@ export const portfolioData = {
         location: "Guntur District, Andhra Pradesh, India",
         linkedin: "https://www.linkedin.com/in/keerthi-medha-7506b32a7",
         github: "https://github.com/keerthi2436",
-        resume: "/keerthi_resume.pdf", // Ensure you have a resume.pdf in public folder or update this
+        resume: "keerthi_resume.pdf",
         summary: "I am an <strong>AI/ML</strong> undergraduate at Vasireddy Venkatadri Institute of Technology, ranked in the <strong>Top 20%</strong> of my entire branch. My work bridges the gap between theoretical machine learning and scalable, real-world software, spanning <strong>Generative AI, Reinforcement Learning, and Machine Learning</strong>. Passionate about how AI behaves in dynamic environments, I am dedicated to engineering deployable, intelligent solutions that solve complex problems."
     },
     services: [
@@ -55,28 +55,37 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: "NEXUS: Real-Time Multimodal Spatial Assistant",
+            title: "NEXUS — Real-Time Multimodal Spatial Assistant",
             year: "2025",
-            technologies: ["Quantized YOLOv3", "Monocular Depth Est.", "Edge AI", "OpenCV"],
-            problem: "Visually impaired navigation relies heavily on passive aids (canes) or high-latency cloud APIs, failing to provide real-time <strong>'Time-to-Collision'</strong> data. LIDAR solutions remain cost-prohibitive for mass adoption.",
-            approach: "We proposed a <strong>'Perception-Action Loop'</strong> architecture that decouples sensory input (Vision/Voice) from logic processing. The system implements a Monocular Depth Estimation algorithm using a Pinhole Camera Model ($D = (H_{real} \cdot f) / H_{pixel}$) to convert 2D bounding boxes into 3D spatial semantics without stereo sensors.",
-            implementation: "The core engine runs a <strong>Quantized YOLOv3-Tiny model</strong> on an Edge CPU (~15 FPS). A custom 'Vision Controller' fuses bounding box centroids with depth scalars to filter obstacles within a <strong>5-meter safety radius</strong>. The output layer triggers haptic feedback and TTS directives only when imminent collision trajectories are detected.",
-            challenges: "Running concurrent object detection and depth calculus on a CPU caused thermal throttling. We mitigated this by implementing an <strong>asynchronous threading model</strong> that prioritizes the 'Safety Loop' over the 'Semantic Loop'.",
-            results: "Validated in controlled environments with a distance error margin of <strong>± 15cm</strong>. The system achieves <strong><50ms inference latency</strong>, ensuring privacy-first, offline operability compliant with GDPR standards.",
+            technologies: ["Python", "Computer Vision (YOLO)", "OpenCV", "Speech Processing", "Edge AI"],
+            problem: "Visually impaired users often lack real-time understanding of dynamic surroundings. Traditional navigation aids fail to provide instantaneous, detailed environmental feedback.",
+            approach: "The system performs real-time object detection and converts visual information into audio feedback for spatial awareness. The architecture emphasizes offline inference to reduce latency and preserve privacy while maintaining real-time performance.",
+            implementation: "Built using Python and OpenCV for vision processing, with YOLO integration for object detection. The system runs on edge devices to ensure low latency.",
+            results: "Provides real-time spatial awareness with minimal latency, effectively assisting visually impaired users in navigating complex environments.",
             githubUrl: "https://github.com/keerthi2436/NEXUS-Real-Time-Multimodal-Spatial-Assistant-",
-            image: "/nexus.svg"
+            image: "/portfolio/nexus.svg"
         },
         {
-            title: "Intelligent Green Corridor System",
+            title: "Memora — Multimodal Cognitive Support System",
+            year: "2025",
+            technologies: ["TypeScript", "LLM Integration", "Vector Databases", "Semantic Search", "RAG"],
+            problem: "Users experiencing memory difficulties struggle with maintaining conversational and contextual continuity, leading to disjointed interactions and loss of critical information.",
+            approach: "The system stores interaction embeddings and retrieves relevant context using semantic similarity. This enables context-aware assistance through retrieval-based LLM responses.",
+            implementation: "Developed with TypeScript and Vector Databases for efficient embedding storage. Integrated LLMs with RAG (Retrieval-Augmented Generation) for accurate context retrieval.",
+            results: "Significantly improves conversational continuity and memory recall, providing a seamless and supportive user experience.",
+            githubUrl: "https://github.com/keerthi2436/memora",
+            image: "/portfolio/network_game.png"
+        },
+        {
+            title: "Green Corridor System — AI-Based Traffic Optimization",
             year: "2024",
-            technologies: ["Geospatial Telemetry", "Graph Algorithms", "IoT / MQTT", "Python"],
-            problem: "Urban emergency response is critically hampered by static traffic signal phasing, where pre-timed cycles fail to adapt to high-priority ambulance transit, causing avoidable fatalities.",
-            approach: "Designed a <strong>'Dynamic Green Wave'</strong> protocol that utilizes real-time GPS telemetry to create a rolling corridor of green signals. Unlike local sensor-based preemption, this system uses a centralized <strong>Look-Ahead algorithm</strong> to clear intersections *before* the vehicle arrives.",
-            implementation: "Developed a Python-based Simulation Controller that maps city intersections as a <strong>directed graph</strong>. The routing engine calculates optimal paths using real-time density weights and communicates with signal nodes via a simulated <strong>Vehicle-to-Infrastructure (V2I) MQTT layer</strong> to override phases dynamically.",
-            challenges: "Balancing the 'recovery time' of the traffic network post-preemption. Aggressive clearing caused gridlock in perpendicular arteries. We tuned the algorithm to implementing a <strong>'soft-return' phase</strong> to gradually restore entropy.",
-            results: "Simulations demonstrated a <strong>40% reduction</strong> in emergency transit time across dense urban grids. The system visualizes live fleet tracking and provides a scalable dashboard for centralized traffic infrastructure control.",
+            technologies: ["Python", "AI/ML Logic", "Traffic Simulation", "Optimization Algorithms"],
+            problem: "Emergency vehicles lose critical time due to static traffic signal control, often leading to delayed response times in life-critical situations.",
+            approach: "The system simulates dynamic signal prioritization by predicting optimal traffic flow paths and adjusting signal timing to minimize travel delay and congestion.",
+            implementation: "Utilizes Python for traffic simulation and optimization algorithms. The system dynamically adjusts signal states based on real-time vehicle location data.",
+            results: "Reduces delays for emergency vehicles by dynamically clearing paths, potentially saving lives through faster response times.",
             githubUrl: "https://github.com/keerthi2436/green-corridor-system",
-            image: "/green_corridor.svg"
+            image: "/portfolio/green_corridor.svg"
         }
     ],
     skills: {
