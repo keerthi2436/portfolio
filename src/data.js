@@ -2,14 +2,14 @@ export const portfolioData = {
     personalInfo: {
         name: "KEERTHI MEDHA MOTHUKURI",
         title: "AI/ML Undergraduate",
-        focus: "Scalable AI Systems | Reinforcement Learning | NLP & Generative AI",
+        focus: "LLMs | RAG Architectures | NLP & Multimodal Pipelines",
         email: "keerthimedha6@gmail.com",
-        phone: "+91 89197 34138",
-        location: "Guntur District, Andhra Pradesh, India",
+        phone: "+91 8919734138",
+        location: "Guntur, India",
         linkedin: "https://www.linkedin.com/in/keerthi-medha-7506b32a7",
         github: "https://github.com/keerthi2436",
-        resume: "keerthi_resume.pdf",
-        summary: "I am an <strong>AI/ML</strong> undergraduate at Vasireddy Venkatadri Institute of Technology, ranked in the <strong>Top 20%</strong> of my entire branch. My work bridges the gap between theoretical machine learning and scalable, real-world software, spanning <strong>Generative AI, Reinforcement Learning, and Machine Learning</strong>. Passionate about how AI behaves in dynamic environments, I am dedicated to engineering deployable, intelligent solutions that solve complex problems."
+        resume: "resume.html",
+        summary: "Third-year AI/ML undergraduate with hands-on experience building production-grade systems using LLMs, RAG architectures, NLP, and multimodal pipelines. Developed and deployed an AI-powered legal analysis platform during an industry Internship at Infosys Springboard, and independently built a cognitive support system for dementia patients using vector databases and large language models. Experienced in end-to-end AI development from model building and integration to deploying live applications using Streamlit and Flask."
     },
     services: [
         {
@@ -34,10 +34,10 @@ export const portfolioData = {
         }
     ],
     achievements: [
-        { title: "AWS Solutions Architecture", desc: "Forage Job Simulation (2025)" },
+        { title: "Cloud Foundations", desc: "AWS Academy (2026)" },
         { title: "Generative AI Professional", desc: "Oracle Certified (2025)" },
-        { title: "LLM Certification", desc: "NPTEL (2025)" },
-        { title: "Academic Excellence", desc: "8.23/10 CGPA (B.Tech)" }
+        { title: "Large Language Models", desc: "NPTEL (2025)" },
+        { title: "Academic Excellence", desc: "8.34/10 GPA (B.Tech)" }
     ],
     experience: [
         {
@@ -46,51 +46,40 @@ export const portfolioData = {
             duration: "Sept 2025 - Nov 2025",
             type: "Virtual Internship",
             description: [
-                "Architected a high fidelity RAG (Retrieval Augmented Generation) engine that processes complex legal statutes to deliver hallucination free, citation backed legal analysis using vector embeddings and GPT-4.",
-                "Engineered specialized AI agents for autonomous Legal Drafting, Case Summarization, and Adaptive Quizzing.",
-                "Delivered a production ready Full-Stack application featuring hybrid search logic (Vector + Keyword) and robust cryptographic authentication."
+                "Architected a high-fidelity RAG engine using vector embeddings and GPT-4, achieving a 40% reduction in hallucination rates.",
+                "Engineered specialized AI agents for autonomous Legal Drafting and Case Summarization, streamlining cross-document synthesis.",
+                "Delivered a production-ready application featuring hybrid search (Vector + Keyword) and latency-optimized inference pipelines."
             ],
             github: "https://github.com/keerthi2436/AI-based-legal-referance-and-retreival-system-"
         }
     ],
     projects: [
         {
-            title: "NEXUS — Real-Time Multimodal Spatial Assistant",
+            title: "Memora: A Cognitive Prosthetic for Dementia Care",
             year: "2025",
-            technologies: ["Python", "Computer Vision (YOLO)", "OpenCV", "Speech Processing", "Edge AI"],
-            problem: "Visually impaired users often lack real-time understanding of dynamic surroundings. Traditional navigation aids fail to provide instantaneous, detailed environmental feedback.",
-            approach: "The system performs real-time object detection and converts visual information into audio feedback for spatial awareness. The architecture emphasizes offline inference to reduce latency and preserve privacy while maintaining real-time performance.",
-            implementation: "Built using Python and OpenCV for vision processing, with YOLO integration for object detection. The system runs on edge devices to ensure low latency.",
-            results: "Provides real-time spatial awareness with minimal latency, effectively assisting visually impaired users in navigating complex environments.",
-            githubUrl: "https://github.com/keerthi2436/NEXUS-Real-Time-Multimodal-Spatial-Assistant-",
-            image: "/portfolio/nexus.svg"
+            technologies: ["Next.js", "TypeScript", "Qdrant", "RAG", "Multi-Agent Systems"],
+            problem: "Dementia patients struggle to retain independence due to memory loss and conversational discontinuity.",
+            approach: "Developed an 'External Hippocampus' using a Multi-Agent system for hybrid RAG context retrieval.",
+            implementation: "Utilized multimodal inputs to store and recall human-centric context via semantic vector search. Built with Next.js and Qdrant.",
+            results: "Significantly improves conversational continuity and memory recall for dementia patients.",
+            githubUrl: "https://github.com/keerthi2436/Memora",
+            image: "network_game.png"
         },
         {
-            title: "Memora — Multimodal Cognitive Support System",
-            year: "2025",
-            technologies: ["TypeScript", "LLM Integration", "Vector Databases", "Semantic Search", "RAG"],
-            problem: "Users experiencing memory difficulties struggle with maintaining conversational and contextual continuity, leading to disjointed interactions and loss of critical information.",
-            approach: "The system stores interaction embeddings and retrieves relevant context using semantic similarity. This enables context-aware assistance through retrieval-based LLM responses.",
-            implementation: "Developed with TypeScript and Vector Databases for efficient embedding storage. Integrated LLMs with RAG (Retrieval-Augmented Generation) for accurate context retrieval.",
-            results: "Significantly improves conversational continuity and memory recall, providing a seamless and supportive user experience.",
-            githubUrl: "https://github.com/keerthi2436/memora",
-            image: "/portfolio/network_game.png"
-        },
-        {
-            title: "Green Corridor System — AI-Based Traffic Optimization",
-            year: "2024",
-            technologies: ["Python", "AI/ML Logic", "Traffic Simulation", "Optimization Algorithms"],
-            problem: "Emergency vehicles lose critical time due to static traffic signal control, often leading to delayed response times in life-critical situations.",
-            approach: "The system simulates dynamic signal prioritization by predicting optimal traffic flow paths and adjusting signal timing to minimize travel delay and congestion.",
-            implementation: "Utilizes Python for traffic simulation and optimization algorithms. The system dynamically adjusts signal states based on real-time vehicle location data.",
-            results: "Reduces delays for emergency vehicles by dynamically clearing paths, potentially saving lives through faster response times.",
-            githubUrl: "https://github.com/keerthi2436/green-corridor-system",
-            image: "/portfolio/green_corridor.svg"
+            title: "AI-Based English Proficiency Assessment & TOEFL/GRE Prediction",
+            year: "Ongoing",
+            technologies: ["Python", "NLP", "Machine Learning", "Supervised Learning"],
+            problem: "Assessing linguistic proficiency accurately requires complex analysis of vocabulary, grammar, and syntax.",
+            approach: "Architecting a comprehensive ML framework to map linguistic features to TOEFL/GRE benchmark levels.",
+            implementation: "Developing an NLP pipeline for feature extraction and leveraging supervised learning models for multi-class proficiency categorization.",
+            results: "Optimizing classification reliability for accurate proficiency mapping.",
+            githubUrl: "https://github.com/keerthi2436",
+            image: "english_proficiency.png"
         }
     ],
     skills: {
-        programming: ["Python", "C", "Java", "HTML/CSS", "JavaScript", "Data Structures"],
-        ai_ml: ["Machine Learning", "NLP", "Speech Recognition", "TensorFlow", "scikit-learn", "RAG"],
-        tools: ["AWS", "SQL", "Flask", "React.js", "GitHub", "Google Translate API"]
+        programming: ["Python", "C", "Java", "JavaScript", "HTML/CSS"],
+        ai_ml: ["NLP", "RAG Systems", "Computer Vision (YOLO)", "TensorFlow", "scikit-learn", "Speech Recognition"],
+        tools: ["AWS", "SQL", "Flask", "React.js", "Git/GitHub", "Docker", "Google Translate API"]
     }
 };

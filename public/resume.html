@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEERTHI MEDHA MOTHUKURI - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #000;
+            --text-color: #333;
+            --line-color: #ddd;
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: var(--font-family);
+            color: var(--text-color);
+            line-height: 1.5;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            padding: 50px 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            text-align: left;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28pt;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 15px;
+            font-size: 10pt;
+            margin-top: 5px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-info span::after {
+            content: " | ";
+            margin-left: 15px;
+        }
+
+        .contact-info span:last-child::after {
+            content: "";
+        }
+
+        section {
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            border-bottom: 1px solid var(--line-color);
+            margin: 15px 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            font-size: 10.5pt;
+            text-align: justify;
+        }
+
+        .entry {
+            margin-bottom: 10px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .entry-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #555;
+            font-size: 10pt;
+            margin-bottom: 4px;
+        }
+
+        .entry-list {
+            padding-left: 20px;
+            margin: 0;
+            font-size: 10pt;
+        }
+
+        .entry-list li {
+            margin-bottom: 3px;
+        }
+
+        .skills-section p {
+            font-size: 10pt;
+            margin: 4px 0;
+        }
+
+        .skills-section strong {
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        .no-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .no-print:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="window.print()" class="no-print">Print to PDF</a>
+
+    <div class="resume-container">
+        <header>
+            <h1>KEERTHI MEDHA MOTHUKURI</h1>
+            <div class="contact-info">
+                <span>📍 Guntur, India</span>
+                <span>📧 <a href="mailto:keerthimedha6@gmail.com">keerthimedha6@gmail.com</a></span>
+                <span>📞 +91 8919734138</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/keerthi-medha-7506b32a7">LinkedIn</a></span>
+                <span>🌐 <a href="https://keerthi2436.github.io/portfolio">Portfolio</a></span>
+            </div>
+        </header>
+
+        <section>
+            <p class="summary">
+                Third-year <strong>AI/ML undergraduate</strong> with hands-on experience building production-grade systems using <strong>LLMs, RAG architectures, NLP, and multimodal pipelines</strong>. Developed and deployed an AI-powered legal analysis platform during an industry Internship at Infosys Springboard, and independently built a cognitive support system for dementia patients using <strong>vector databases and large language models</strong>. Experienced in end-to-end AI development from model building and integration to deploying live applications using <strong>Streamlit and Flask</strong>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>AI Intern 🔗</span>
+                    <span>Sept 2025 – Nov 2025</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Infosys Springboard</span>
+                </div>
+                <ul class="entry-list">
+                    <li><strong>Architected a high-fidelity RAG engine</strong> using vector embeddings and GPT-4, achieving a 40% reduction in hallucination rates.</li>
+                    <li><strong>Engineered specialized AI agents</strong> for autonomous Legal Drafting and Case Summarization, streamlining cross-document synthesis.</li>
+                    <li><strong>Delivered a production-ready application</strong> featuring hybrid search (Vector + Keyword) and latency-optimized inference pipelines.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Memora: A Cognitive Prosthetic for Dementia Care 🔗</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>github.com/keerthi2436/Memora</span>
+                </div>
+                <ul class="entry-list">
+                    <li>Developed an "External Hippocampus" for dementia patients to retain independence through personalized memory assistance.</li>
+                    <li>Architected a <strong>Multi-Agent system</strong> using <strong>Next.js, TypeScript, and Qdrant</strong> for hybrid RAG context retrieval.</li>
+                    <li>Utilized multimodal inputs to store and recall human-centric context via <strong>semantic vector search</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span>AI-Based English Proficiency Assessment & TOEFL/GRE Prediction</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Ongoing Project</span>
+                </div>
+                <ul class="entry-list">
+                    <li>Architecting a comprehensive ML framework to assess linguistic proficiency and map it to <strong>TOEFL/GRE benchmark levels</strong>.</li>
+                    <li>Developing an <strong>NLP pipeline</strong> for feature extraction including vocabulary richness, grammatical accuracy, and syntactic complexity.</li>
+                    <li>Leveraging supervised learning models for multi-class proficiency categorization and <strong>optimizing classification reliability</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>B.Tech — Artificial Intelligence & Machine Learning</span>
+                    <span>Expected 2027</span>
+                </div>
+                <div class="entry-subheader">
+                    <span>Vasireddy Venkatadri Institute of Technology (VVIT)</span>
+                    <span>GPA: 8.34/10</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <p><strong>Core AI/ML:</strong> NLP, RAG Systems, Computer Vision (YOLO), TensorFlow, scikit-learn, Speech Recognition.</p>
+            <p><strong>Languages:</strong> Python, C, Java, JavaScript, HTML/CSS.</p>
+            <p><strong>Tools & Cloud:</strong> AWS, SQL, Flask, React.js, Git/GitHub, Docker, Google Translate API.</p>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Cloud Foundations (AWS Academy) – 2026</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Generative AI Professional (Oracle) – 2025</span>
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span>Large Language Models (NPTEL) – 2025</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
